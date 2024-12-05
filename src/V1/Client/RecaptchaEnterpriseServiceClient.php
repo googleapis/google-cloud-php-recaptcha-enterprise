@@ -272,7 +272,7 @@ final class RecaptchaEnterpriseServiceClient
      *
      * @throws ValidationException If $formattedName could not be matched.
      */
-    public static function parseName(string $formattedName, string $template = null): array
+    public static function parseName(string $formattedName, ?string $template = null): array
     {
         return self::parseFormattedName($formattedName, $template);
     }
